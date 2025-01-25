@@ -32,11 +32,11 @@ public class TugasA {
     private Character jenisKelamin;
     @Column(name = "MasihHidup", nullable = false)
     private Boolean masihHidup;
-    @Column(name = "CreatedDate",updatable = false,nullable = false, length = 7)
+    @Column(name = "CreatedDate",updatable = false,nullable = false, columnDefinition = "datetime2(7)")
     private Date createdDate;
     @Column(name = "CreatedBy",updatable = false,nullable = false)
     private Integer createdBy;
-    @Column(name = "ModifiedDate", insertable = false,length = 7)
+    @Column(name = "ModifiedDate", insertable = false,columnDefinition = "datetime2(7)")
     private Date modifiedDate;
     @Column(name = "ModifiedBy", insertable = false)
     private Integer modifiedBy;
